@@ -9,7 +9,7 @@ namespace ProjectGame.Inside_The_Game_System.Movement
     /// <summary>
     /// Передвижение 
     /// </summary>
-    public class Movement
+    public class Movement : InsideTheGameSystem
     {
         /// <summary>
         /// НАЗВАНИЕ ОБЪЕКТА ДЛЯ ПЕРЕДВИЖЕНИЯ
