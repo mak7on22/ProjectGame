@@ -43,6 +43,20 @@ namespace ProjectGame.Player
         /// Раса Игрока
         /// </summary>
         public string? Species { get; set; }
-
+        /// <summary>
+        /// Вес Игрока
+        /// </summary>
+        private double weight;
+        public double Weight
+        {
+            get { return weight; }
+            set
+            {
+                if (value <= 100) //kg
+                    weight = value;
+                else
+                    Console.WriteLine("Вес игрока не может превышать 100 kg.");
+            }
+        }
     }
 }
