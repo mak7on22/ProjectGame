@@ -31,10 +31,12 @@ namespace ProjectGame.Inside_The_Game_System.Pets
         public void SetRandomRarity()
         {
             Random random = new();
-            int randomNumber = random.Next(100); 
+            int randomNumber = random.Next(101);
             if (randomNumber < 50)
                 RarePets = "обычный";
-            else if (randomNumber < 90)
+            else if (randomNumber < 70)
+                RarePets = "редкий";
+            else if (randomNumber < 95)
                 RarePets = "эпический";
             else
                 RarePets = "легендарный";
