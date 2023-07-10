@@ -10,7 +10,7 @@ namespace ProjectGame.Inside_The_Game_System.Items
     /// <summary>
     /// Предметы
     /// </summary>
-    public class Items 
+    public class Items : InsideTheGameSystem
     {
         /// <summary>
         /// НАзвание предмета
@@ -23,6 +23,6 @@ namespace ProjectGame.Inside_The_Game_System.Items
         /// <summary>
         /// Вес предмета
         /// </summary>
-        public byte Weight { get; set; }
+        public double WeightItems { get; set; }
     }
 }
